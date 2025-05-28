@@ -1,0 +1,16 @@
+---
+import Logo from "./Logo.astro";
+---
+
+<nav class="w-full bg-black/70 text-white px-6 py-4 flex justify-between items-center border-b border-white/10">
+  <div class="flex items-center space-x-2">
+    <Logo />
+    <span class="text-xl font-bold tracking-widest">Tripp Life</span>
+  </div>
+  <ul class="flex space-x-6 text-sm font-medium">
+    <li><a href="/" class="hover:text-pink-400 transition">Home</a></li>
+    <li><a href="/about" class="hover:text-pink-400 transition">About</a></li>
+    <li><a href="/portfolio" class="hover:text-pink-400 transition">Portfolio</a></li>
+    <li><a href="/contact" class="hover:text-pink-400 transition">Contact</a></li>
+  </ul>
+</nav>
