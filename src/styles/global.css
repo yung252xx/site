@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+.logo{
+    filter: invert(1);
+    height: 40px;
+    object-fit: contain;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.tt{
+    height: 20px;
+}
+
+#logo1{
+    
+}
+
+main{
+    margin:0, auto;
+}

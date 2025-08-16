@@ -1,11 +1,16 @@
 ---
-import Logo from "./Logo.astro";
+import Logo from "../assets/images/Tripp-Life-Logo-SVG.svg";
+import "../styles/global.css";
 ---
 
 <nav class="w-full bg-black/70 text-white px-6 py-4 flex justify-between items-center border-b border-white/10">
+  
+  <div >
+    <img src={Logo.src} alt="" class="logo">
+  </div>
+
   <div class="flex items-center space-x-2">
-    <Logo />
-    <span class="text-xl font-bold tracking-widest">Tripp Life</span>
+    <span class="text-xl font-bold tracking-widest font-stretch-condensed size-14 font-serif" ><span class="tt"></span></span></span>
   </div>
   <ul class="flex space-x-6 text-sm font-medium">
     <li><a href="/" class="hover:text-pink-400 transition">Home</a></li>
