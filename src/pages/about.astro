@@ -1,11 +1,37 @@
 ---
 
 import Layout from '../layouts/Layout.astro';
+import Hreel from '../assets/videos/no preseveratives.mp4'
+import "../styles/global.css";
+import Navbar from '../components/Nav.astro'
+
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	
 </Layout>
+
+
+<body>
+    <article>
+        <h1>
+            “We Dream in Frequencies.”
+        </h1>
+        <p>
+            Tripp Life is the intersection of sound, design, and esoteric knowledge.
+            Every project channels surreal aesthetics, hypnotic textures, and symbolic meaning — 
+            inspired by astrology, occult systems, and altered states of consciousness.
+
+            Founded by Nate Hardy — producer, guitarist, visual artist, and creative director — 
+            Tripp Life brings together everything that lives in the liminal space between art and mysticism.
+        </p>
+    </article>
+    <video controls autoplay muted loop class=' w-52 rounded-2xl'>
+    <source src={Hreel} type="video/mp4"/>
+    </video>
+    <video controls autoplay muted loop class=' w-52 shadow-lg object-cover rounded-2xl'>
+    <source src={Hreel} type="video/mp4"/>
+    </video>
+</body>
