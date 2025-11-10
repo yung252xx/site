@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import Hreel from '../assets/videos/no preseveratives.mp4'
 import "../styles/global.css";
 import Navbar from '../components/Nav.astro'
+import Footer from "../components/Footer.astro";
 
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -14,24 +15,30 @@ import Navbar from '../components/Nav.astro'
 </Layout>
 
 
-<body>
-    <article>
-        <h1>
+<body class="flex flex-row m-48">
+    <article class="flex flex-col justify-center items-center">
+        <h1 class="  mt-20 text-6xl font-extrabold bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-clip-text text-transparent">
             “We Dream in Frequencies.”
         </h1>
-        <p>
-            Tripp Life is the intersection of sound, design, and esoteric knowledge.
-            Every project channels surreal aesthetics, hypnotic textures, and symbolic meaning — 
-            inspired by astrology, occult systems, and altered states of consciousness.
-
-            Founded by Nate Hardy — producer, guitarist, visual artist, and creative director — 
-            Tripp Life brings together everything that lives in the liminal space between art and mysticism.
+       <p class="max-w-2xl mx-20 mt-10 text-lg leading-relaxed text-white">
+        <b class="hover:text-3xl  from-purple-500 via-white-500 to-blue-500 text-2xl  transition-all duration-300">Tripp Life</b> exists at the intersection of 
+        <i>sound, design, and esoteric knowledge</i>. Each project channels surreal aesthetics, hypnotic textures, and symbolic meaning — 
+        inspired by astrology, occult systems, and altered states of consciousness.
         </p>
+
+        <p class="max-w-2xl mx-20 mt-6 text-lg leading-relaxed text-white">
+        Founded by <b class="hover:text-2xl  from-purple-500 via-white-500 to-blue-500 text-xl  transition-all duration-300">Nathanxx</b> — 
+        <i>producer, guitarist, visual artist, and creative director</i> — Tripp Life brings together everything that inhabits the liminal space 
+        between art and mysticism.
+        </p>
+
+
     </article>
-    <video controls autoplay muted loop class=' w-52 rounded-2xl'>
-    <source src={Hreel} type="video/mp4"/>
-    </video>
-    <video controls autoplay muted loop class=' w-52 shadow-lg object-cover rounded-2xl'>
-    <source src={Hreel} type="video/mp4"/>
-    </video>
+      <!--   <div class="flex item-center justify-center h-screen ">
+            <video controls autoplay muted loop class=' w-max rounded-4xl  shadow-lg '>
+            <source src={Hreel} type="video/mp4"/>
+            </video>
+        </div>
+        -->
+<Footer />
 </body>

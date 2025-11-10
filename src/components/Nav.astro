@@ -2,20 +2,20 @@
 import Logo from "../assets/images/Tripp-Life-Logo-SVG.svg";
 import "../styles/global.css";
 ---
-
-<nav class="w-full bg-black text-white px-6 py-4 flex justify-between items-center border-b border-white/10">
-  
-  <div >
-    <img src={Logo.src} alt="" class="logo">
-  </div>
-
-  <header class="sticky top-0 z-50 backdrop-blur-lg flex space-x-6 text-sm font-medium border-b border-white/10">
-    <h1 class="text-2xl font-trippy">Tripp Life</h1>
-    <li><a href="/" class="hover:text-pink-400 transition">Home</a></li>
-    <li><a href="/about" class="hover:text-pink-400 transition">About</a></li>
-    <li><a href="/music" class="hover:text-pink-400 transition">Music</a></li>
-    <li><a href="/design" class="hover:text-pink-400 transition">Design</a></li>
-    <li><a href="/downloads" class="hover:text-pink-400 transition">Downloads</a></li>
-    <li><a href="/contact" class="hover:text-pink-400 transition">Contact</a></li>
-  </header>
-</nav>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<header class="bg-black ">
+  <nav class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div >
+        <img src={Logo.src} alt="" class="logo">
+      </div>
+    <div class="text-xl font-bold"></div>
+    <ul class="flex space-x-6 text-white">
+      <li><a href="/" class="hover:text-pink-600">Home</a></li>
+      <li><a href="/about" class="hover:text-pink-600">About</a></li>
+      <!-- <li><a href="/design" class="hover:text-pink-600">Design</a></li> -->
+      <li><a href="/music" class="hover:text-pink-600">Music</a></li>
+      <!-- <li><a href="/downloads" class="hover:text-pink-600">Downloads</a></li> -->
+      <li><a href="/contact" class="hover:text-pink-600">Contact</a></li>
+    </ul>
+  </nav>
+</header>

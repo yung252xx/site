@@ -23,17 +23,6 @@ body {
 	height: 100%;
 }
 
-b{
-    color:white;
-}
-
-:hover b{
-    color: palevioletred;
-    
-}
-
-
-
 .tt{
     height: 20px;
 }
